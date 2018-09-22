@@ -15,7 +15,7 @@
       "url": "data/us-10m.json",
       "format": {"type": "topojson", "feature": "counties"},
       "transform": [
-        { "type": "lookup", "from": "unemp", "key": "State_Code", "fields": ["State_Abv"], "values": ["Amount"] }
+        { "type": "lookup", "from": "unemp", "key": "State_Code, State_Abv, Damage_Code, Damage_Descp,Amount", "fields": ["State_Abv"], "values": ["Amount"] }
       ]
     }
   ],
@@ -51,7 +51,7 @@
       "from": {"data": "counties"},
       "encode": {
         "enter": { "tooltip": {"signal": "format(datum.rate, '0.1%')"}},
-        "update": { "fill": {"scale": "color", "field": "rate"} },
+        "update": { "fill": {"scale": "color", "field": "Amount"} },
         "hover": { "fill": {"value": "red"} }
       },
       "transform": [
