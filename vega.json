@@ -15,7 +15,7 @@
      "url": "https://raw.githubusercontent.com/nipun03/VA-HW3/master/data/us-10m.json",
      "format": {"type": "topojson", "feature": "states"},
      "transform": [
-       {  "type": "lookup", "from": "Losses", "key": "State_Code", "fields": ["id"], "values": ["State_Abv","Amount"] },
+       {  "type": "lookup", "from": "Losses", "key": "State_Code", "fields": ["id"], "values": ["Amount", "State_Abv"] },
        { "type": "filter", "expr": "datum.Amount != null" }
       
      ]
