@@ -53,7 +53,7 @@
      "from": {"data": "states"},
      "encode": {
        "enter": { "tooltip": {"signal": "format(datum.Amount, '0.1')"}},
-       "update": { "fill": {"scale": "color", "field": "Amount, State_Abv"} },
+       "update": { "fill": {"scale": "color", "field": "Amount"} },
        "hover": { "fill": {"value": "red"} }
      },
      "transform": [
