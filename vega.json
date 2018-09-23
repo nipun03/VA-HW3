@@ -15,7 +15,7 @@
       "url": "https://raw.githubusercontent.com/nipun03/VA-HW3/master/data/us-10m.json",
       "format": {"type": "topojson", "feature": "counties"},
       "transform": [
-        { "type": "lookup", "from": "unemp", "key": "id", "fields": ["State_Code, Damage_Code"], "values": ["Amount"] },
+        { "type": "lookup", "from": "unemp", "key": "State_Code", "fields": ["id"], "values": ["Amount"] },
         { "type": "filter", "expr": "datum.rate != null" }
       ]
     }
@@ -32,7 +32,7 @@
     {
       "name": "color",
       "type": "quantize",
-      "domain": [0, 0.15],
+      "domain": [0, 1000000],
       "range": {"scheme": "blues", "count": 7}
     }
   ],
