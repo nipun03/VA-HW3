@@ -12,7 +12,7 @@
     },
     {
       "name": "counties",
-      "url": "https://raw.githubusercontent.com/nipun03/VA-HW3/master/data/us-10m.json",
+      "url": "data/us-10m.json",
       "format": {"type": "topojson", "feature": "counties"},
       "transform": [
         { "type": "lookup", "from": "unemp", "key": "State_Code", "fields": ["id"], "values": ["Amount"] },
