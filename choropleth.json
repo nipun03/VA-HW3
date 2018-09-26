@@ -42,7 +42,7 @@
    {
      "name": "color",
      "type": "quantize",
-     "domain": [0, 280000000],
+     "domain": [0, 500000000],
      "range": {"scheme": "greens", "count": 50}
    }
  ],
@@ -51,7 +51,6 @@
    {
      "fill": "color",
      "orient": "bottom-right",
-     
      "title": "Sum of Total Damages",
      "strokeWidth": {"value": 1.5},
      "labelAlign":"center"
