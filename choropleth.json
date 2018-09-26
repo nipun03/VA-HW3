@@ -43,7 +43,7 @@
      "name": "color",
      "type": "quantize",
      "domain": [0, 280000000],
-     "range": {"scheme": "blueorange"}
+     "range": {"scheme": "greens", "count": 50}
    }
  ],
 
@@ -66,7 +66,7 @@
      "encode": {
        "enter": { "tooltip": {"signal": "datum.Amount"}},
        "update": { "fill": {"scale": "color", "field": "Amount"} },
-       "hover": { "fill": {"value": "green"} }
+       "hover": { "fill": {"value": "orange"} }
      },
      "transform": [
        { "type": "geoshape", "projection": "projection" }
