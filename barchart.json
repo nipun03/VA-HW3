@@ -70,7 +70,7 @@
           "fill": {"value": "steelblue"}
         },
         "hover": {
-          "fill": {"value": "red"}
+          "fill": {"value": "yellow"}
         }
       }
     },
